@@ -254,7 +254,7 @@
     <!-- Full-width Navbar with a pint of orange -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <!-- Brand title -->
-        <a class="navbar-brand" href="#">FOODABLES</a>
+        <img src="{{ asset('logos/whitewc.jpg') }}" alt="FOODABLES Logo" style="height: 40px;">
         
         <!-- Toggler for mobile -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -265,7 +265,7 @@
         <ul class="navbar-nav">
             @if (Route::has('login'))
                 @auth
-                    <li class="nav-item">
+                    <li class="nav-item">   
                         <a class="nav-link" href="{{ url('/dashboard') }}">Dashboard</a>
                     </li>
                 @else
